@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+}
+
+:root {
+  --min-grey: #FAFAFA;
+  --med-grey: #ECECEC;
+  --max-grey: #DFDFDF;
+  --navy-color: #2B3252;
+  --red-color: #EF5455;
+  --yellow-color: #FAD744;
+}
+
+body {
+  background-color: var(--med-grey);
+  color: var(--navy-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.section-title {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+#hero, 
+#two,
+#four {
+  background-color: var(--max-grey);
+}
+
+.main-header {
+  background-color: var(--red-color);
+  position: sticky;
+  top: -70px;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--yellow-color);
+  text-shadow: 2px 1px var(--navy-color);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pnav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+}
+
+.pnav-list-item a {
+  color: var(--yellow-color);
+  text-transform: uppercase;
+}
+
+.pnav-list-item a:hover {
+  color: var(--navy-color);
+}
+
+.block {
+  min-width: 18rem;
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  text-align: center;
+  border: .1rem solid var(--red-color);
+  border-radius: .4rem;
+}
+
+@media only screen and (min-width: 670px) {
+  html {
+    scroll-padding-top: 7rem;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    }
+
+  .logo {
+    padding: 1rem 0 0 2rem;
+    width: 20vw;
+  }
+
+  .pnav-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 65vw;
+    padding: 3rem 2rem 0 0;
+  }
+
+  .pnav-list-item {
+    padding: 1rem;
+  }
+
+  .hero, 
+  .testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .block {
+    margin: 1rem .5rem;
+  }
+
+}
